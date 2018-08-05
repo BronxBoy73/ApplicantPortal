@@ -1,1 +1,463 @@
 /* You can add global styles to this file, and also import other style files */
+@charset "UTF-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,500,700');
+
+html {-webkit-font-smoothing: antialiased} 
+body {
+    color: #58595b;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 16px;
+}
+header {
+    background: transparent
+}
+.login-right {
+    padding-top: 200px;
+    padding-left: 50px;
+}
+.header-right {
+    padding-top: 200px;
+    padding-left: 50px;
+    background: #efeff0;
+}
+.login-page header {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+.logo {
+    margin:auto;
+    display: block;
+}
+.login-banner {
+    width:100%;
+    height: 100vh;
+    background: url(/img/login-banner.jpg) no-repeat center center / cover;
+}
+.login-form {
+    background: #fff;
+    border-radius: 20px;
+    padding:20px;
+    margin-bottom: 20px;
+    width:50%;
+}
+.login-form input {
+    background: #fff;
+    border:1px solid #aaa;
+    border-radius: 5px;
+}
+.login-page {
+    background: #efeff0;
+}
+.login-heading {
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.form-group {
+    margin-bottom: 30px;
+}
+label {
+    color: #00aeef;
+    font-size: 20px;
+    font-weight: 700;
+}
+form button {
+    background: #00aeef;
+    border-radius: 5px;
+    padding:10px 20px;
+    border:none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 26px;
+    display: block;
+    margin-bottom: 20px;
+}
+form button:hover {
+    cursor: pointer;
+    background: #003c7e;
+}
+h1 {
+    font-size: 26px;
+    margin: 0;
+}
+h2 {
+    color: #00aeef;
+    font-size:36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+h2 span {
+    font-weight: 700;
+    color: #003c7e;
+}
+a {
+    color: #00aeef;
+    text-decoration: none;
+}
+a:hover {
+    color: #003c7e;
+    text-decoration: none;
+}
+.login-form span {
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: block;
+}
+.no-pad {
+    padding:0;
+}
+.logout {
+    position: absolute;
+    right: 60px;
+    top:0;
+    z-index: 1;
+    color: #fff;
+    padding: 3px 10px 6px 32px;
+    background:#58595b;
+    border: none;
+    display: block;
+}
+.logout::before {
+    content: "\f023";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 10px;
+}
+.logout:hover {
+    cursor: pointer;
+    background: #00aeef;
+}
+nav {
+    margin-bottom: 10px;
+}
+nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+nav ul li:not(:last-child) {
+    margin-right: 20px;
+}
+header {
+    margin-bottom: 30px;
+}
+.greeting {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #939598;
+}
+.greeting span {
+    font-size: 20px;
+    font-weight: 700;
+    color: #00aeef;
+    display: block;
+}
+.introduction {
+    border-right: 2px dotted #e8e8e9;
+    padding-right: 40px;
+    font-display: 18px;
+}
+.videos {
+    padding-left: 40px;
+}
+p {
+    margin-bottom: 16px;
+}
+.signature {
+    font-weight: 700;
+    color: #00aeef;
+    display: block;
+}
+.embed-container {
+    position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;
+    margin-bottom: 10px;
+}
+.embed-container iframe, .embed-container object, .embed-container embed {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+}
+.video {
+    font-weight: 700;
+    color: #00aeef;
+    margin-bottom: 30px;
+}
+.large-button {
+    background: #00aeef;
+    padding:25px 40px;
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    margin-top: 15px;
+}
+.large-button:hover {
+    background: #003c7e;
+    cursor: pointer;
+}
+.main-content {
+    margin-bottom: 80px;
+}
+.questions {
+    background: #efeff0;
+    padding: 20px 15px 20px 35px;
+}
+.interview-package {
+    border:4px solid #00aeef;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.interview-package-heading {
+    position: relative;
+    z-index: 1;
+    background: #fff;
+    padding: 20px;
+    display: inline-block;
+    font-size: 60px;
+    margin-top: -61px;  
+    color: #939598;
+}
+.question-heading {
+    font-weight: 700;
+    display: inline-block;
+    color: #fff;
+    padding: 10px 20px 10px 30px;
+    background: #00aeef;
+    -webkit-clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 10% 100%, 0% 50%);
+    clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 10% 100%, 0% 50%);
+}
+.questions-inner {
+    border-left: 2px dotted #e8e8e9;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 40px;
+}
+.questions-columns {
+    padding-left: 50px;
+}
+a.question, .interview-package span {
+    margin-bottom: 10px;
+    display: block;
+}
+footer {
+    background: #efeff0;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+footer img {
+    margin-bottom: 20px;
+    width: 350px;
+}
+h4 {
+    font-size: 16px;
+    font-weight: 700;
+}
+.dashboard-banner {
+    background:url(/img/dashboard-banner.jpg) no-repeat top center / cover;
+    width: 100%;
+    height: 100%;
+}
+.admin-banner {
+    background:url(/img/admin-banner.jpg) no-repeat top center / cover;
+    width: 100%;
+    height: 100%;
+}
+.scheduled-banner {
+    background:url(/img/scheduled-banner.jpg) no-repeat top center / cover;
+    width: 100%;
+    height: 100%;
+}
+.scheduled-banner2 {
+    background:url(/img/scheduled-banner2.jpg) no-repeat top center / cover;
+    width: 100%;
+    height: 100%;
+}
+.calendar-banner {
+    background:url(/img/calendar-banner.jpg) no-repeat top center / cover;
+    width: 100%;
+    height: 100%;
+}
+.adminlogin-banner {
+    background:url(/img/adminlogin-banner.jpg) no-repeat top center / cover;
+    width: 100%;
+    height: 100vh;
+}
+.dashboard .logo {
+    margin: auto;
+    position: absolute;
+    display: block;
+    z-index: 1;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+.question {
+    font-weight: 700;
+    text-decoration: underline;
+    margin-top:10px;
+    margin-bottom: 0 !important;
+}
+.calendar-wrapper {
+    border:2px solid #efeff0;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 18px;
+}
+h2.alt {
+    font-size: 40px;
+    color: #003c7e;
+    font-weight: 500;
+}
+.calendar-wrapper .item {
+    display: block;
+    font-weight: 700;
+    color: #00aeef;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+#datepicker {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: none;
+}
+.schedule #datepicker {
+    display: block;
+}
+.profile-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width:125px;
+    height: 125px;
+    border:1px solid #00aeef;
+    border-radius: 50%;
+    margin: auto;
+}
+.schedule .main-content {
+    font-size:20px;
+}
+.schedule-row {
+    margin-bottom: 20px;
+}
+.schedule-row span {
+    font-weight: 700;
+    color: #00aeef;
+}
+.schedule-btn {
+    border:1px solid #e1e2e3;
+    border-radius: 5px;
+    background: #efeff0;
+    padding: 10px 115px 10px 10px;
+    display: block;
+    color: #616264;
+    margin-bottom: 20px;
+}
+.schedule-btn:hover {
+    cursor: pointer;
+    background: #ddd;
+}
+.schedule-btn::after {
+    content: "\f133";
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    color: #616264;
+    padding-left: 80px;
+}
+.calendar-message {
+    background: #dea61e;
+    color: #fff;
+    padding: 10px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: none;
+}
+.answer {
+    line-height: 1.5;
+}
+.answer ul {
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+.interview-links a {
+    display: block;
+    margin-bottom: 10px;
+}
+.modal-content {
+    padding: 10px 10px 0px;
+}
+    
+    
+@media screen and (max-width: 992px) {
+    .login-form {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .login-banner {
+        display: none;
+    }
+    .dashboard .logo {
+        width: 60%;
+        left: 20px;
+        margin: inherit;
+    }
+    .logout {
+        right:0;
+    }
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .introduction {
+        padding-right: 15px;
+    }
+    .large-button {
+        font-size: 22px;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .videos {
+        padding-left: 15px;
+    }
+    .profile-img {
+        margin: 0 0 30px 0;
+    }
+    .schedule-btn {
+        padding: 10px 10px 10px 10px;
+        width: 100%;
+        text-align: left;
+    }
+    .schedule-btn::after {
+        padding-left: 46px;
+    }
+    .login-right, .header-right {
+        padding-left: 15px;
+    }
+    .greeting {
+        line-height: 1.0;
+    }
+    .greeting span {
+        line-height: 1.3;
+    }
+    .interview-package-outer {
+        padding: 15px;
+    }
+}
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 800px;
+    }
+}
