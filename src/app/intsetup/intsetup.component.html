@@ -1,0 +1,104 @@
+<div class="dashboard">
+  <header>
+    <img class="logo" src="img/logo.png">
+  </header>
+
+    <button class="logout">Logout</button>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-5 no-pad d-none d-sm-block">
+          <div class="calendar-banner"></div>
+        </div>
+        <div class="col-md-7 header-right">
+          <h1>Admissions Office</h1>
+          <h2>APPLICANT
+            <span>INTERVIEW PORTAL</span>
+          </h2>
+          <nav>
+            <ul>
+              <li>
+                <a href="#">Interview Set Up</a>
+              </li>
+              <li>
+                <a href="#">Interview Info</a>
+              </li>
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+  <div class="container main-content">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <h2 class="alt">Interview Set Up</h2>
+        <div class="calendar-wrapper">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="profile-img" style="background-image: url(img/profile.jpg)"></div>
+            </div>
+            <div class="col-md-9">
+              <span class="item">Name: Michelle Williams</span>
+              <span class="item">AAMCID: 13550424</span>
+              <br>
+              <span class="item">Select Interview Date:</span>
+
+              <button class="schedule-btn">Available dates in green</button>
+
+              Have a question?
+              <br>
+              <a href="#">Contact us</a>.
+
+              <div id="datepicker"></div>
+
+              <div class="calendar-message">
+                There is no available interview time for selected date, please select future date in green color from the calendar.
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <img src="img/footer-logo.jpg" class="img-fluid">
+        </div>
+        <div class="col-md-5">
+          Albert Einstein College of Medicine
+          <br> 1300 Morris Park Avenue
+          <br> Belfer Building, Room 206
+          <br> Bronx, NY 10461
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+
+  <script>
+    $(function () {
+      $("#datepicker").datepicker();
+    });
+    $('.schedule-btn').click(function () {
+      $("#datepicker").show();
+      $(".calendar-message").show();
+    });
+  </script>
+
+</div>
